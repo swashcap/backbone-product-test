@@ -25,6 +25,142 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./">Backbone Product</a>
+        </div>
+        <p class="navbar-text">An experiment by <a href="http://www.swashcap.com/">Swash Cap</a></p>
+      </div>
+    </nav>
+    <main class="container" role="main">
+      <div class="row">
+        <div class="col-sm-10 col-sm-push-1">
+          <div class="page-header">
+            <h1>Morbi est tellus, dapibus at imperdiet</h1>
+          </div>
+          <p class="lead">Non, ultricies ut risus. Nunc faucibus leo in augue sodales eget rhoncus dolor lobortis.</p>
+          <p>Fusce pulvinar ipsum eu augue pharetra at congue arcu aliquam. Cras in sem dui. Nam a elit purus. Fusce fermentum condimentum nunc vel pulvinar. Donec quis leo non nisl egestas aliquam id eget elit. Vivamus sed nisl vitae arcu adipiscing lacinia ac a dui. Cras hendrerit, tortor sed pharetra dapibus, nisl justo dapibus arcu, volutpat placerat quam massa vel lectus.</p>
+        </div>
+      </div><!-- .row -->
+      <form role="form">
+        <div class="row">
+          <div class="col-sm-10 col-sm-push-1">
+            <div class="alert alert-warning alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Packages</h3>
+              </div>
+              <div class="panel-body">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="package" value="10" /> 10 Packages
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="package" value="20" /> 20 Packges
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="package" value="30" checked /> 30 Packges
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="package" value="40" /> 40 Packges
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="package" value="50" /> 50 Packges
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Units</h3>
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="variety-1" class="control-label">Variety 1</label>
+                  <input type="number" value="0" min="0" step="1" class="form-control input-sm" id="variety-1">
+                  <span class="help-block">$4 each</span>
+                </div>
+                <div class="form-group">
+                  <label for="variety-2" class="control-label">Variety 2</label>
+                  <input type="number" value="0" min="0" step="1" class="form-control input-sm" id="variety-2">
+                  <span class="help-block">$2 each</span>
+                </div>
+                <div class="form-group">
+                  <label for="variety-3" class="control-label">Variety 3</label>
+                  <input type="number" value="0" min="0" step="1" class="form-control input-sm" id="variety-3">
+                  <span class="help-block">$2 each</span>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Extra Features</h3>
+              </div>
+              <div class="panel-body">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="" checked>
+                    Feature 1
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Feature 2
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Feature 3
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="disabledSelect">Feature 4</label>
+                  <select id="disabledSelect" class="form-control">
+                    <option selected disabled>Nada</option>
+                    <option>Imma feature</option>
+                    <option>Me, too</option>
+                    <option>Ooh, pick this one!</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-sm-4 -->
+        </div><!-- .row -->
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button class="btn btn-primary btn-lg" type="submit">Buy It!</button>
+          </div>
+        </div><!-- .row -->
+      </form>
+    </main><!-- .container -->
+
+    <footer class="container text-right" role="contentinfo">
+      <small>An experiment by <a href="http://www.swashcap.com/">Swash Cap</a>, <abbr>AKA</abbr> Cory Reed.</small>
+    </footer>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
