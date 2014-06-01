@@ -1,6 +1,6 @@
-'use strict';
+/* global app*/
 
-var app = app || {};
+'use strict';
 
 app.Collections.Units = Backbone.Collection.extend({
   model: app.Models.Unit

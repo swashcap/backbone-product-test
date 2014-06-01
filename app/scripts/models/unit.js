@@ -1,6 +1,6 @@
-'use strict';
+/* global app*/
 
-var app = app || {};
+'use strict';
 
 app.Models.Unit = Backbone.Model.extend({
   defaults: {

@@ -1,3 +1,5 @@
+/* global app*/
+
 'use strict';
 
 app.Views.PackagesView = Backbone.View.extend({
@@ -25,6 +27,6 @@ app.Views.PackagesView = Backbone.View.extend({
   },
 
   changePackage: function (e) {
-    // console.log(e.target.value);
+    console.log(e.target.value);
   }
 });

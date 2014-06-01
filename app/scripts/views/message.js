@@ -1,3 +1,5 @@
+/* global app*/
+
 'use strict';
 
 app.Views.MessageView = Backbone.View.extend({

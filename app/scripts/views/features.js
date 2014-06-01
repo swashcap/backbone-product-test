@@ -1,3 +1,5 @@
+/* global app*/
+
 'use strict';
 
 app.Views.FeaturesView = Backbone.View.extend({
@@ -18,4 +20,4 @@ app.Views.FeaturesView = Backbone.View.extend({
   renderOne: function (feature) {
     this.$el.append(this.featureTemplate(feature));
   }
-})
+});

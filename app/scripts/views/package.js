@@ -1,3 +1,5 @@
+/* global app*/
+
 'use strict';
 
 app.Views.PackageView = Backbone.View.extend({

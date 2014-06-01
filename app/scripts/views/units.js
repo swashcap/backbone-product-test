@@ -1,3 +1,5 @@
+/* global app*/
+
 'use strict';
 
 app.Views.UnitsView = Backbone.View.extend({
