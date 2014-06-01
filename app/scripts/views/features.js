@@ -1,8 +1,6 @@
 'use strict';
 
-var app = app || {};
-
-app.FeaturesView = Backbone.View.extend({
+app.Views.FeaturesView = Backbone.View.extend({
   el: '#features',
   featureTemplate: _.template($('#template-feature').html()),
 

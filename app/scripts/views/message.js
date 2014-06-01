@@ -1,8 +1,6 @@
 'use strict';
 
-var app = app || {};
-
-app.MessageView = Backbone.View.extend({
+app.Views.MessageView = Backbone.View.extend({
   el: '#message',
   className: 'alert alert-warning alert-dismissable',
 

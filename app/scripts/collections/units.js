@@ -2,6 +2,6 @@
 
 var app = app || {};
 
-app.Units = Backbone.Collection.extend({
-  model: app.Unit
+app.Collections.Units = Backbone.Collection.extend({
+  model: app.Models.Unit
 });

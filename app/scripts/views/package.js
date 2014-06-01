@@ -1,8 +1,6 @@
 'use strict';
 
-var app = app || {};
-
-app.PackageView = Backbone.View.extend({
+app.Views.PackageView = Backbone.View.extend({
   template: _.template($('#template-package').html()),
 
   initialize: function (pack) {

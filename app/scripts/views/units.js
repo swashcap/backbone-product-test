@@ -1,14 +1,10 @@
-/* global _,Backbone */
-
 'use strict';
 
-var app = app || {};
-
-app.UnitsView = Backbone.View.extend({
+app.Views.UnitsView = Backbone.View.extend({
   el: '#units',
 
   initialize: function (units) {
-    this.collection = new app.Units(units);
+    this.collection = new app.Collections.Units(units);
     this.render();
   },
 
@@ -23,7 +19,7 @@ app.UnitsView = Backbone.View.extend({
   },
 
   renderOne: function (unit) {
-    var unitView = new app.UnitView({model: unit});
+    var unitView = new app.Views.UnitView({model: unit});
 
     this.$el.append(unitView.render().el);
 

@@ -1,8 +1,6 @@
 'use strict';
 
-var app = app || {};
-
-app.PackagesView = Backbone.View.extend({
+app.Views.PackagesView = Backbone.View.extend({
   el: '#packages',
 
   initialize: function (packs) {
@@ -21,7 +19,7 @@ app.PackagesView = Backbone.View.extend({
   },
 
   renderOne: function (pack) {
-    var packageView = new app.PackageView(pack);
+    var packageView = new app.Views.PackageView(pack);
 
     this.$el.append(packageView.render().el);
   },
