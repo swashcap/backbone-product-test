@@ -76,35 +76,10 @@
               <div class="panel-heading">
                 <h3 class="panel-title">Extra Features</h3>
               </div>
-              <div class="panel-body">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="" checked>
-                    Feature 1
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    Feature 2
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    Feature 3
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label for="disabledSelect">Feature 4</label>
-                  <select id="disabledSelect" class="form-control">
-                    <option selected disabled>Nada</option>
-                    <option>Imma feature</option>
-                    <option>Me, too</option>
-                    <option>Ooh, pick this one!</option>
-                  </select>
-                </div>
-              </div>
+
+              <!-- Features in here -->
+              <div id="features" class="panel-body"></div>
+
             </div>
           </div><!-- .col-sm-4 -->
         </div><!-- .row -->
@@ -139,6 +114,17 @@
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <%= message %>
     </script>
+    <script type="text/template" id="template-feature">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="feature<%- id %>" value="1">
+          <%= name %> &ndash; <%= price %>
+        </label>
+      </div>
+    </script>
+    <script type="text/template" id="template-total">
+
+    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -170,6 +156,7 @@
     <script src="scripts/views/units.js"></script>
     <script src="scripts/views/package.js"></script>
     <script src="scripts/views/packages.js"></script>
+    <script src="scripts/views/features.js"></script>
     <script src="scripts/views/message.js"></script>
     <script src="scripts/views/app.js"></script>
     <script src="scripts/main.js"></script>

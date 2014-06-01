@@ -6,11 +6,7 @@ app.UnitView = Backbone.View.extend({
   template: _.template($('#template-unit').html()),
 
   initialize: function () {
-    this.listenTo(this.model, 'change', this.test);
-  },
-
-  test: function () {
-    console.log(this.model.get('quantity') * this.model.get('price'));
+    // this.listenTo(this.model, 'change', this.test);
   },
 
   events: {
