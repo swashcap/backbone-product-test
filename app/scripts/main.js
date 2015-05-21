@@ -73,5 +73,6 @@ var app = {
     var plansView = new app.Views.PackagesView(this.data.packages);
     var unitsView = new app.Views.UnitsView(this.data.units);
     var featuresView = new app.Views.FeaturesView(this.data.features);
+    var checkoutView = new app.Views.CheckoutView();
   }
 };

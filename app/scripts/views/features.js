@@ -18,6 +18,10 @@ app.Views.FeaturesView = Backbone.View.extend({
   },
 
   renderOne: function (feature) {
-    this.$el.append(this.featureTemplate(feature));
+    var JSON = _.extend(feature, {
+      price: app.Helpers.formatPrice(feature.price)
+    });
+
+    this.$el.append(this.featureTemplate(JSON));
   }
 });
